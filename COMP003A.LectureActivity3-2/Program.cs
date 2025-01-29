@@ -56,6 +56,20 @@ namespace COMP003A.LectureActivity3_2
                 secondNumber = nextNumber; // update second number
                 count++; // increment count
             } while (count < 10); // loop until count reaches 10
+
+            // create array of fruits | data structure preview
+            string[] fruits = { "Apple", "Mango", "Orange", "Kiwi" };
+
+            Console.WriteLine("\n");
+
+            // displays each fruit using foreach loop
+            Console.WriteLine("Your favorite fruits are:");
+
+            // loop through each fruit in array
+            foreach (string fruit in fruits)
+            {
+                Console.WriteLine($"- {fruit}");
+            }
         }
     }
 }
