@@ -27,7 +27,7 @@ namespace COMP003A.LectureActivity3_2
                 // shows multiplication table
                 Console.WriteLine($"{i} x {num} = {i * num}");
             }
-            \// Display table in reverse usin a while loop
+            // Display table in reverse usin a while loop
             Console.WriteLine("\nReversed Multiplication Table:");
             int reverse = 10;
 
@@ -41,7 +41,21 @@ namespace COMP003A.LectureActivity3_2
                 reverse--;
             }
 
-            Console.WriteLine("\nFib");
+            // Display fibonacci series using a do-while loop
+            Console.WriteLine("\nFibonacci Series:");
+            int firstNumber = 0, secondNumber = 1, nextNumber;// first two numbers
+            Console.Write($"{firstNumber} {secondNumber} "); // display first two numbers
+            int count = 2; // count starts at 2
+
+            // loop that generates next ten numbers in the series
+            do
+            {
+                nextNumber = firstNumber + secondNumber; // calculate next number
+                Console.Write($"{nextNumber} "); // display next number
+                firstNumber = secondNumber; // update first number
+                secondNumber = nextNumber; // update second number
+                count++; // increment count
+            } while (count < 10); // loop until count reaches 10
         }
     }
 }
