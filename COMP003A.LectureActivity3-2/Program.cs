@@ -1,7 +1,7 @@
 ﻿//Pedro Garcia
 //COMP003A
 //Johnathan Cruz
-//Lecture Activity 3-1
+//Lecture Activity 3-2
 namespace COMP003A.LectureActivity3_2
 {
     internal class Program
